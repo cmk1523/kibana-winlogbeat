@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "c2830d40-2fa4-11e7-a4e0-1ded588ba6fd",
+    "_type": "search",
+    "_source": {
+      "title": "WINLOG physical logons",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"win*\",\"highlightAll\":true,\"filter\":[],\"query\":{\"query_string\":{\"query\":\"chris AND task:Logon NOT event_data.TargetServerName:nas251 NOT event_data.TargetServerName:localhost\",\"analyze_wildcard\":true}}}"
+      }
+    }
+  }
+]
